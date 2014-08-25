@@ -1,0 +1,27 @@
+<%= form_for @add do |f|  %>
+
+  <div>
+    <%= f.label :name %>
+    <%= f.name_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :year %>
+    <' f.year_field :year %>
+  </div>
+
+  <div>
+    <%= f.label :synopsis %>
+    <' f.synopsis_field :synopsis %>
+  </div>
+
+  <div>
+    <% f.submit "Create Movie" %>
+    <%= link_to("Create Movie", create_path) %>
+  </div>
+
+<% end %>
+
+
+
+
